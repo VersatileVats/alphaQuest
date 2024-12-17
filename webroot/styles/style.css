@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'ITIM';
+  src: url('../fonts/itim.ttf') format('truetype');
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: "Itim", serif;
+}
+
+#heading h1 {
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#gameDiv {
+  display: none;
+  height: 100vh;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+  
+#timer {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+#words {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(127, 255, 212, 0.5);
+}
+
+#words img {
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+
+/* for the q&a section */
+#qa-section {
+  padding: 10px;
+  display: none;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 5px;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#questionTimer {
+  position: absolute;
+  bottom: 0.5rem;
+  display: none;
+}
+
+#questionTime {
+  color: green;
+}
+
+#questions-container {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#scoreDiv {
+  position: absolute;
+  display: none;
+  right: 0.7rem;
+  top: 0.7rem;
+}
+
+#help {
+  padding: 0 0.6rem;
+}
+
+#help h2 {
+  font-weight: bold;
+}
+
+#timelineInfo {
+  position: absolute;
+  left: 0.7rem;
+  top: 0.7rem;
+}
+
+#alphaReasoning {
+  margin: auto;
+  display: none;
+  max-width: 300px;
+  margin-top: 2rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#submit-button {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blank-input {
+  border: none;
+  border-bottom: 2px solid #007BFF;
+  outline: none;
+  text-align: center;
+  width: 20px;
+  margin: 0 2px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

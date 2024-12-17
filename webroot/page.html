@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha Quest</title>
+    <script src="scripts/gsap.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/animate.css" />
+  </head>
+  <body style="position: relative">
+    <img
+      id="proceedToMain"
+      style="position: absolute; left: 10px; top: 10px; cursor: pointer"
+      width="50"
+      src="assets/play.png" />
+
+    <p
+      style="
+        left: 50%;
+        bottom: 0px;
+        margin-bottom: 0;
+        font-weight: bold;
+        position: absolute;
+        transform: translateX(-50%);
+      "
+      id="teamDetails">
+      Made by <u>Vishal Vats</u> for the Reddit Hackathon
+    </p>
+
+    <!-- landing section -->
+    <div id="landing-section">
+      <div id="full-form">
+        <p>Tells the full-form of this alphabet</p>
+      </div>
+      <div id="letters">
+        <img id="leter_s" width="60" src="assets/name.png" alt="" />
+        <img id="letter_m" width="60" src="assets/place.png" alt="" />
+        <img id="letter_a" width="60" src="assets/animal.png" alt="" />
+        <img id="letter_r" width="60" src="assets/thing.png" alt="" />
+        <p style="text-align: center; margin-top: 3rem">
+          Being smart is <u>an art</u>, and can be conquered <u>by a few</u>
+        </p>
+      </div>
+      <div id="reasoning">
+        <p></p>
+      </div>
+    </div>
+
+    <!-- game division -->
+    <div id="gameDiv">
+      <div id="heading">
+        <h1>Alpha Quest</h1>
+        <p id="timer"></p>
+        <p id="questionTimer">
+          Answer the questions in <span id="questionTime"></span> secs
+        </p>
+      </div>
+
+      <div id="scoreDiv">
+        <h3>Score: <span id="score"></span></h3>
+      </div>
+
+      <!-- week & days info -->
+      <div id="timelineInfo">
+        <h3>Week: <span id="week"></span></h3>
+        <h3>Day: <span id="day"></span></h3>
+      </div>
+
+      <div id="wordsDiv">
+        <div id="words">
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/a.png"
+            alt="a" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/b.png"
+            alt="b" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/c.png"
+            alt="c" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/d.png"
+            alt="d" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/e.png"
+            alt="e" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/f.png"
+            alt="f" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/g.png"
+            alt="g" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/h.png"
+            alt="h" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/i.png"
+            alt="i" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/j.png"
+            alt="j" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/k.png"
+            alt="k" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/l.png"
+            alt="l" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/m.png"
+            alt="m" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/n.png"
+            alt="n" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/o.png"
+            alt="o" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/p.png"
+            alt="p" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/q.png"
+            alt="q" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/r.png"
+            alt="r" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/s.png"
+            alt="s" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/t.png"
+            alt="t" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/u.png"
+            alt="u" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/v.png"
+            alt="v" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/w.png"
+            alt="w" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/x.png"
+            alt="x" />
+          <img
+            width="40"
+            height="40"
+            style="padding: 4px"
+            src="assets/y.png"
+            alt="y" />
+          <!-- <img width="40" height="40" src="images/z.png" alt="z" /> -->
+        </div>
+
+        <div id="alphaReasoning">
+          <h2 style="margin-bottom: 0.5rem">Answers for P</h2>
+          <p style="display: flex; align-items: center; margin-bottom: 0.5rem">
+            <img
+              src="assets/name.png"
+              width="24"
+              style="margin-right: 4px" />Edison invented the light bulb.
+          </p>
+          <p style="display: flex; align-items: center; margin-bottom: 0.5rem">
+            <img
+              src="assets/place.png"
+              width="24"
+              style="margin-right: 4px" />Edinburgh is a historic Scottish city.
+          </p>
+          <p style="display: flex; align-items: center; margin-bottom: 0.5rem">
+            <img
+              src="assets/animal.png"
+              width="24"
+              style="margin-right: 4px" />Eagles are known for their sharp
+            vision.
+          </p>
+          <p style="display: flex; align-items: center; margin-bottom: 0.5rem">
+            <img
+              src="assets/thing.png"
+              width="24"
+              style="margin-right: 4px" />Eggs are a popular source of protein.
+          </p>
+        </div>
+      </div>
+
+      <div id="help">
+        <h2>Rules of the game</h2>
+        <ol type="a">
+          <li type="">Each day will have a new batch of four characters</li>
+          <li>The answers will be auto submitted after 30 seconds</li>
+          <li>A level can be played only once</li>
+          <li>+5 for passing a level & -3 for wrong answers</li>
+          <li>
+            Tap on the colored aplhabet, & answer questions related to Name,
+            Place, Animal, & Thing
+          </li>
+        </ol>
+      </div>
+
+      <div id="qa-section">
+        <!-- <h1>Q&A Section</h1> -->
+        <div id="questions-container">
+          <!-- Questions will be dynamically inserted here -->
+        </div>
+        <button id="submit-button" disabled>Submit Answers</button>
+      </div>
+    </div>
+
+    <script src="scripts/q&a.js"></script>
+    <script src="scripts/confetti.js"></script>
+    <script src="scripts/howler.js"></script>
+    <script src="scripts/audio.js"></script>
+    <script src="scripts/animate.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
