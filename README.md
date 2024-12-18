@@ -1,4 +1,4 @@
-# aplhaQuest
+# Alpha Quest
 Made for winning the Reddit hackathon
 
 <p align="justify">
